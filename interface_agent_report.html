@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>界面剂检验报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: "微软雅黑", "Microsoft Yahei", Arial, sans-serif;
+            background-color: #f5f7fa;
+            padding: 3rem 1rem;
+            color: #333;
+        }
+        .report-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 2.8rem;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+        }
+        .report-title {
+            text-align: center;
+            color: #2d3748;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .test-item {
+            display: flex;
+            margin-bottom: 1.4rem;
+            align-items: flex-start;
+        }
+        .item-label {
+            flex: 0 0 130px;
+            font-weight: 600;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .item-content {
+            flex: 1;
+            color: #2d3748;
+            padding-left: 1.2rem;
+            border-left: 1px solid #e2e8f0;
+            line-height: 1.6;
+        }
+        .conclusion-item {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #edf2f7;
+        }
+        .conclusion-content {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #2b6cb0;
+            border-left: 1px solid #e2e8f0;
+            padding-left: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .report-container { padding: 1.8rem; }
+            .test-item { flex-direction: column; }
+            .item-label { 
+                flex: none;
+                margin-bottom: 0.6rem;
+                border-left: none;
+                border-bottom: 1px solid #e2e8f0;
+                padding-left: 0;
+                width: 100%;
+            }
+            .item-content, .conclusion-content {
+                padding-left: 0;
+                border-left: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <h1 class="report-title">检验报告</h1>
+
+
+        <div class="test-item">
+            <span class="item-label">1. 样品名称</span>
+            <span class="item-content">界面剂</span>
+        </div>
+        <div class="test-item">
+            <span class="item-label">2. 规格型号</span>
+            <span class="item-content">液体型 其他类</span>
+        </div>
+        <div class="test-item">
+            <span class="item-label">3. 报告编号</span>
+            <span class="item-content">Z200928011</span>
+        </div>
+        <div class="test-item">
+            <span class="item-label">4. 委托单位</span>
+            <span class="item-content">河北华尔慕思建材有限公司</span>
+        </div>
+        <div class="test-item">
+            <span class="item-label">5. 生产单位</span>
+            <span class="item-content">河北华尔慕思建材有限公司</span>
+        </div>
+        <div class="test-item">
+            <span class="item-label">6. 检验类别</span>
+            <span class="item-content">型式检验</span>
+        </div>
+        <div class="test-item">
+            <span class="item-label">7. 签发日期</span>
+            <span class="item-content">2025/3/5 0:00:00</span>
+        </div>
+        <div class="test-item">
+            <span class="item-label">8. 检验单位</span>
+            <span class="item-content">河北省建筑机械材料设备产品质量监督检验站</span>
+        </div>
+
+
+        <div class="test-item conclusion-item">
+            <span class="item-label">9. 检验结论</span>
+            <span class="conclusion-content">经检验，送检样品所检项目符合标准要求。</span>
+        </div>
+    </div>
+</body>
+</html>
